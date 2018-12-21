@@ -1,0 +1,496 @@
+{
+  "robotList": [
+    {
+      "id": "id00b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "PATATE2"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Allumer"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Éteindre"
+        }
+      ]
+    },
+    {
+      "id": "id01b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "PATATE1"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Allumer"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Éteindre"
+        }
+      ]
+    },
+    {
+      "id": "id02b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "Unknown Command"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Allumer"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Éteindre"
+        }
+      ]
+    },
+    {
+      "id": "id03b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "Unknown Command"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Allumer"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Éteindre"
+        }
+      ]
+    },
+    {
+      "id": "id04b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "Unknown Command"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Power On"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Power Off"
+        }
+      ]
+    },
+    {
+      "id": "id05b",
+      "team": "blue",
+      "MAC": "00:00:00:00:00:00",
+      "commands": [
+        {
+          "command": "unknown-command",
+          "actiontype": "singleaction",
+          "description": "Unknown Command"
+        },
+        {
+          "command": "test-nrf",
+          "actiontype": "singleaction",
+          "description": "Tester le NRF"
+        },
+        {
+          "command": "dribble",
+          "actiontype": "doubleaction",
+          "description": "Activer le dribleur"
+        },
+        {
+          "command": "charge-kicker",
+          "actiontype": "singleaction",
+          "description": "Charger le botteur"
+        },
+        {
+          "command": "kick",
+          "actiontype": "singleaction",
+          "description": "Actionner le Condensateur"
+        },
+        {
+          "command": "print-ball-sensors",
+          "actiontype": "live-info",
+          "description": "Capteurs IRs"
+        },
+        {
+          "command": "batt-info",
+          "actiontype": "live-info",
+          "description": "Batterie"
+        },
+        {
+          "command": "batt-info-repeat",
+          "actiontype": "live-info",
+          "description": "Batterie Répète"
+        },
+        {
+          "command": "motors-unit-test",
+          "actiontype": "singleaction",
+          "description": "Test des moteurs"
+        },
+        {
+          "command": "set-pwm",
+          "actiontype": "inputaction",
+          "description": "Définir PWM"
+        },
+        {
+          "command": "set-speed",
+          "actiontype": "inputaction",
+          "description": "Définir Vitesse"
+        },
+        {
+          "command": "batt-protection-override",
+          "actiontype": "singleaction",
+          "description": "Overrider Protection Batterie"
+        },
+        {
+          "command": "batt-protection-reset",
+          "actiontype": "singleaction",
+          "description": "Reset Protection Batterie"
+        },
+        {
+          "command": "power-on",
+          "actiontype": "singleaction",
+          "description": "Allumer"
+        },
+        {
+          "command": "power-off",
+          "actiontype": "singleaction",
+          "description": "Éteindre"
+        }
+      ]
+    }
+  ]
+}

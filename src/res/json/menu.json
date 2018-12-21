@@ -1,0 +1,32 @@
+{
+  "menuOptions": [
+    {
+      "key": "home",
+      "name": "Home",
+      "description": "Home View",
+      "link": "ULtronDebugApp/src/Components/Home",
+      "icon": "HOMEMENU"
+    },
+    {
+      "key": "connections",
+      "name": "Connections",
+      "description": "Bluetooth Connection Page",
+      "link": "ULtronDebugApp/src/Components/Connections",
+      "icon": "CONNECTMENU"
+    },
+    {
+      "key": "controller",
+      "name": "Controller",
+      "description": "Controller View",
+      "link": "ULtronDebugApp/src/Components/Controller",
+      "icon": "CONTROLEMENU"
+    },
+    {
+      "key": "robots",
+      "name": "Robots",
+      "description": "Robots list",
+      "link": "ULtronDebugApp/src/Components/Robots",
+      "icon": "ROBOTMENU"
+    }
+  ]
+}

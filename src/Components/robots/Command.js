@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import {Button, Text, TextInput, View} from 'react-native';
 import LandscapeStyle from "../../style/LandscapeStyle";
 
+// Redux import
+import {connect} from 'react-redux';
+
 class Logs extends Component {
     constructor(props) {
         super(props);
@@ -117,4 +120,9 @@ class Logs extends Component {
     };
 }
 
-export default Logs
+const mapStateToProps = (state) => {
+    const { robotRedux } = state;
+    return { robotRedux }
+};
+
+export default connect(mapStateToProps)(Logs);

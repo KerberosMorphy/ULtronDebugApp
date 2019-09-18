@@ -6,6 +6,9 @@ import LandscapeStyle from '../../style/LandscapeStyle';
 
 import {robotList} from 'ULtronDebugApp/src/res/json/robots.json';
 
+// Redux import
+import {connect} from 'react-redux';
+
 class Robots extends Component {
     render() {
         return (
@@ -44,4 +47,9 @@ class Robots extends Component {
     };
 }
 
-export default Robots
+const mapStateToProps = (state) => {
+    const { robotRedux } = state;
+    return { robotRedux }
+};
+
+export default connect(mapStateToProps)(Robots);

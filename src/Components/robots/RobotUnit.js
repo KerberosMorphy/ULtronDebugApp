@@ -3,6 +3,9 @@ import {View, Text, Image, TouchableHighlight} from "react-native";
 import LandscapeStyle from '../../style/LandscapeStyle';
 import images from "../../res/img/image";
 
+// Redux import
+import {connect} from 'react-redux';
+
 class RobotUnit extends Component {
     render() {
         return (
@@ -35,4 +38,9 @@ class RobotUnit extends Component {
     }
 }
 
-export default RobotUnit
+const mapStateToProps = (state) => {
+    const { robotRedux } = state;
+    return { robotRedux }
+};
+
+export default connect(mapStateToProps)(RobotUnit);

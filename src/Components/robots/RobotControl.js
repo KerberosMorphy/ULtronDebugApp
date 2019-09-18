@@ -3,6 +3,9 @@ import {View, Button, Text} from "react-native";
 import LandscapeStyle from '../../style/LandscapeStyle';
 import Command from "./Command";
 
+// Redux import
+import {connect} from 'react-redux';
+
 class RobotControl extends Component {
     constructor(props) {
         super(props);
@@ -46,10 +49,15 @@ class RobotControl extends Component {
                 this.style = LandscapeStyle.inputaction;
                 break;
         }
-    }
+    };
 
     commandCall(command) {
     }
 }
 
-export default RobotControl
+const mapStateToProps = (state) => {
+    const { robotRedux } = state;
+    return { robotRedux }
+};
+
+export default connect(mapStateToProps)(RobotControl);

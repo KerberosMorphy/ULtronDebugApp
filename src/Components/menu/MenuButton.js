@@ -3,6 +3,9 @@ import {Image, TouchableHighlight} from 'react-native';
 import images from "../../res/img/image";
 import LandscapeStyle from '../../style/LandscapeStyle';
 
+// Redux import
+import {connect} from 'react-redux';
+
 class MenuButton extends Component {
     render() {
         return (
@@ -15,4 +18,9 @@ class MenuButton extends Component {
     }
 }
 
-export default MenuButton
+const mapStateToProps = (state) => {
+    const { robotRedux } = state;
+    return { robotRedux }
+};
+
+export default connect(mapStateToProps)(MenuButton);

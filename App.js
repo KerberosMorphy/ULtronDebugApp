@@ -10,7 +10,15 @@ import About from './src/Components/about/About';
 import Logs from './src/Components/logs/Logs';
 import LandscapeStyle from './src/style/LandscapeStyle';
 
+// Redux import
+import {Provider, connect} from 'react-redux';
+import {createStore} from "redux";
+import appReducer from './AppReducer';
+
+// JSON list de Robot pour test
 import {robotList} from 'ULtronDebugApp/src/res/json/robots.json';
+
+const store = createStore(appReducer);
 
 class ULtronDebugApp extends Component {
     constructor(props) {
@@ -27,20 +35,22 @@ class ULtronDebugApp extends Component {
 
     render() {
         return (
-            <View style={LandscapeStyle.appContainer}>
-                <MenuBar myState={this.state.selectedMenu}
-                         updateState={this.updateState.bind(this)}/>
-                <View style={LandscapeStyle.body}>
-                    {this.bodyComponent}
+            <Provider store={ store }>
+                <View style={LandscapeStyle.appContainer}>
+                    <MenuBar myState={store.selectedMenu}
+                             updateState={this.updateState.bind(this)}/>
+                    <View style={LandscapeStyle.body}>
+                        {this.bodyComponent}
+                    </View>
                 </View>
-            </View>
+            </Provider>
         )
     };
 
     updateState = (input) => {
-        this.setState({
-            selectedMenu: input
-        });
+        // this.setState({
+        //     selectedMenu: input
+        // });
         switch (input) {
             case 'Home':
                 this.bodyComponent = <Home/>;
@@ -55,9 +65,9 @@ class ULtronDebugApp extends Component {
                 this.bodyComponent = <Logs/>;
                 break;
             case 'Robots':
-                this.bodyComponent = <Robots selectedRobot={this.state.selectedRobot}
+                this.bodyComponent = <Robots selectedRobot={store.selectedRobot}
                                              handleRobot={this.handleRobot.bind(this)}
-                                             commandList={this.state.commandList}/>;
+                                             commandList={store.commandList}/>;
                 break;
             case 'About':
                 this.bodyComponent = <About/>;
@@ -68,13 +78,15 @@ class ULtronDebugApp extends Component {
     handleRobot = (input) => {
         this.setState({
             selectedRobot: input
-        }, () => { this.handleCommand()});
+        }, () => {
+            this.handleCommand()
+        });
     };
 
     handleCommand = () => {
-        if (this.state.selectedRobot !== null) {
-            this.state.robotList.map(robot => {
-                if (robot.id === this.state.selectedRobot) {
+        if (store.selectedRobot !== null) {
+            store.robotList.map(robot => {
+                if (robot.id === store.selectedRobot) {
                     this.setState({
                         commandList: robot.commands
                     })
